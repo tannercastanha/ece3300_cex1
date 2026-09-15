@@ -23,11 +23,16 @@ module simple(
 
 	always @(a)
 		case(a)
-			
+			3'b000: result = 0000000;
+			3'b001: result = 0000001;
+			3'b010: result = 0000011;
+			3'b011: result = 0000111;
+			3'b100: result = 0001111;
+			3'b101: result = 0011111;
+			3'b110: result = 0111111;
+			3'b111: result = 1111111;
 
 		end case
-// add your code here
-   
 endmodule
 
 
