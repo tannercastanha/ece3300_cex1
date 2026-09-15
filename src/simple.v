@@ -20,20 +20,21 @@
 module simple(
 	      input [2:0]  a,
 	      output reg [6:0] result);
+	
 // add your code here
 	always @(*) begin
 		case(a)
-			3'b000: result = 7'b0000000;
-			3'b001: result = 7'b0000001;
-			3'b010: result = 7'b0000011;
-			3'b011: result = 7'b0000111;
-			3'b100: result = 7'b0001111;
-			3'b101: result = 7'b0011111;
-			3'b110: result = 7'b0111111;
-			3'b111: result = 7'b1111111;
-
-		end case;
+			0: result = 7'b0000000;
+			1: result = 7'b0000001;
+			2: result = 7'b0000011;
+			3: result = 7'b0000111;
+			4: result = 7'b0001111;
+			5: result = 7'b0011111;
+			6: result = 7'b0111111;
+			7: result = 7'b1111111;
+		end case
 	end
+			
 endmodule
 
 
