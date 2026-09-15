@@ -32,7 +32,7 @@ module simple(
 			5: result = 7'b0011111;
 			6: result = 7'b0111111;
 			7: result = 7'b1111111;
-		end case
+		endcase
 	end
 			
 endmodule
